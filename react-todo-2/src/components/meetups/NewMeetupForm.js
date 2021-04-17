@@ -23,7 +23,7 @@ function NewMeetUpForm(props) {
             description: enterDescription
         }
 
-        alert(JSON.stringify(meetupData))
+        props.onAddMeetup(meetupData)
     }
 
     return (
