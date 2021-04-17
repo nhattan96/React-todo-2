@@ -4,12 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom'
-
+import { FavoriesContextProvider } from './store/favories-context'
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+      <FavoriesContextProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </FavoriesContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
