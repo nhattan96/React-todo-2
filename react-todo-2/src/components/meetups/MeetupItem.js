@@ -10,10 +10,10 @@ function MeetupItem(props) {
 
     function toogleFavoritesStatusHander() {
         if (itemIsFavorites) {
-            favoriesCtx.removeFavories(props.id)
+            favoriesCtx.removeFavorites(props.id)
         }
         else {
-            favoriesCtx.addFavories({
+            favoriesCtx.addFavorites({
                 id: props.id,
                 title: props.title,
                 description: props.description,
